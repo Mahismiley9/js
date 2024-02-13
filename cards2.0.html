@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var main=document.createElement("div")
+        document.body.appendChild(main)
+        var b1=document.createElement("center")
+        document.body.appendChild(b1)
+        b1.appendChild(main)
+        main.style.width="500px"
+       main.style.height="450px"
+        main.style.border="4px solid"
+        
+
+        var cc=document.createElement("img")
+        main.appendChild(cc)
+        cc.setAttribute;
+
+        var a=document.createElement("div")
+        document.body.appendChild(a)
+        a.style.border="4px solid"
+        a.style.display="block"
+        a.style.width="1450px"
+        a.style.height="500px"
+        a.style.marginTop="80px"
+
+        var p=document.createElement("p")
+        a.appendChild(p)
+        p.style.height="260px"
+        p.style.width="260px"
+        p.style.marginLeft="60px"
+        p.style.padding="10px 10px"
+        p.style.display="inline-block"
+        var image=document.createElement("img")
+        image.setAttribute("src","./iphone.jpg")
+        p.appendChild(image)
+        image.style.height="260px"
+        image.style.width="260px"
+        image.style.padding="10px"
+        var p1=document.createElement("div")
+        a.appendChild(p1)
+        p1.style.height="260px"
+        p1.style.width="260px"
+        p1.style.marginLeft="10px 10px"
+        p1.style.display="inline-block"
+        var image1=document.createElement("img")
+        image1.setAttribute("src","./drone.jpg")
+        p1.appendChild(image1)
+      image1.style.width = "250px";
+      image1.style.height = "260px";
+      image1.style.padding = "10px";
+
+      var p2 = document.createElement("div");
+      a.appendChild(p2);
+      p2.style.height = "250px";
+      p2.style.width = "250px";
+      p2.style.marginLeft = "50px";
+      p2.style.padding = "10px 10px";
+      p2.style.display = "inline-block";
+      var image2=document.createElement("img")
+      image2.setAttribute("src","./laptop.jpg")
+      p2.appendChild(image2)
+      image2.style.width="280px"
+      image2.style.height="280px"
+      image2.style.padding="10px"
+
+      var p3=document.createElement("div")
+      a.appendChild(p3)
+      p3.style.width="260px"
+      p3.style.height="260px"
+      p3.style.display="inline-block"
+      p3.style.padding="10px 10px"
+      var image3=document.createElement("img")
+      image3.setAttribute("src","./rtx.jpg")
+      p3.appendChild(image3)
+      image3.style.width="260px"
+      image3.style.height="260px"
+      image3.style.padding="60px"
+
+      image.addEventListener("click",hello);
+      image1.addEventListener("click",hi);
+      image2.addEventListener("click",arigatho)
+      image3.addEventListener("click",dhaiski)
+      function hello(){
+        cc.setAttribute("src","./iphone.jpg");
+        cc.style.width="490px"
+        cc.style.height="450px"
+      }
+      function hi(){
+        cc.setAttribute("src","./drone.jpg")
+        cc.style.height="450px"
+        cc.style.width="450px"
+      }
+      function arigatho(){
+        cc.setAttribute("src","./laptop.jpg")
+        cc.style.width="400px"
+        cc.style.height="350px"
+      }
+      function dhaiski(){
+        cc.setAttribute("src","./rtx.jpg")
+        cc.style.width="490px"
+        cc.style.height="450px"
+      }
+
+
+
+
+    </script>
+</body>
+</html>

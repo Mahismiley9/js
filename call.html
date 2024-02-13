@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj = {
+        a: "10",
+        b: function (a, b) {
+          // obj method
+          console.log(a, b);
+          console.log(this);
+        },
+      };
+      obj.b(10,50);
+      var obj2 = {
+        a: 30,
+        b: 40,
+      };
+      obj.b.call(obj2);
+    </script>
+</body>
+</html>

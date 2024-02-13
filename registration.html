@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM REGISTRATION</title>
+    <style>
+        body{
+            background-image: url(./ba.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+            font-size: 57px;
+        }
+        input{
+        height: 60px;
+        width: 400px;
+        font-size: 50px;
+        background-color: aqua;
+        color: blueviolet;
+        }
+        button{
+            height: 60px;
+        width: 400px;
+        font-size: 50px;
+        border-radius: 30%;
+        background-color: brown;
+        }
+
+    </style>
+</head>
+<body >
+
+    <center>
+    
+        <form id="register">
+            <h2>Registration Form</h2>
+            <label for="Username">Username</label>
+            <input type="text" placeholder="Enter username" required id="username"><br><br><br>
+            <label for="Password">Password</label>
+            <input type="password" placeholder="Enter Password" required id="password"><br><br><br>
+            <label for="confirm Password">confirm Password</label>
+            <input type="password" placeholder="confirm password" required id="confirmPassword"><br><br><br>
+            <label for="date of birth">Date of Birth</label>
+            <input type="date" placeholder="Enter DOB" required id="dob"><br><br><br>
+            <label for="Email">Email</label>
+            <input type="email" placeholder="Enter Email" required id="email"><br><br><br>
+            <input type="submit" value="Register" id="submit">
+    
+            <p>if already registered.</p><a href="./loginpage.html" class="login-link">login in</a>
+    </center>
+    
+    <script>
+debugger
+ var a=document.getElementById("register");
+    a.addEventListener("submit",function(event){
+         event.preventDefault()
+         
+
+   var Username=document.getElementById("username").value;
+   var password=document.getElementById("password").value;
+   var confirmPassword=document.getElementById("confirmPassword").value;
+   var dob=document.getElementById("dob").value;
+   var email=document.getElementById("email").value;
+
+
+
+        if(password!==confirmPassword){
+        alert("password do not match");
+    return;
+        }
+
+
+
+        var userData={
+            Username:Username,
+            password:password,
+            dob:dob,
+            email:email
+        };
+
+         localStorage.setItem(Username,JSON.stringify(userData));
+
+ 
+          window.location.href="./loginpage.html"
+
+     
+    });
+
+    </script>
+</body>
+</html>

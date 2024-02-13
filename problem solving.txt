@@ -1,0 +1,239 @@
+problem solving:
+29/1/24
+
+1) a=[3,2,1,66,21]
+for(i=0;i<a.length;i++){
+ for(j=i+1;j<a.length;j++){
+     if(a[i]>a[j]){
+         t=a[i]
+         a[i]=a[j]
+         a[j]=t
+     }
+   
+ }
+    
+}
+console.log("Sorted arrays is",a)
+ console.log(a[1]+a[2]+a[a.length-2])
+2)a=['aba','aa','cccc','z']
+for(i=0;i<a.length;i++){
+ for(j=i+1;j<a.length;j++){
+     if(a[i].length<a[j].length){
+         t=a[i]
+         a[i]=a[j]
+         a[j]=t
+     }
+   
+ }
+    
+}
+console.log("Sorted arrays is",a)
+30/1/24
+1)unique numbers
+
+arr=[5,8,7,6,1,2,3,8,7]
+empty=[]
+for(i of arr){
+if(!empty.includes(i)){
+    empty.push(i)
+}
+    
+}
+for(i=0;i<empty.length;i++){
+    c=0
+for(j=0;j<arr.length;j++){
+    if(empty[i]==arr[j]){
+        c=c+1
+    }
+}
+if(c==1){
+    console.log(empty[i])
+}
+    
+}
+2)unique no: count:
+arr=[5,8,7,6,1,2,3,8,7]
+empty=[]
+for(i of arr){
+if(!empty.includes(i)){
+    empty.push(i)
+}
+    
+}
+for(i=0;i<empty.length;i++){
+    c=0
+for(j=0;j<arr.length;j++){
+    if(empty[i]==arr[j]){
+        c=c+1
+    }
+}
+
+    console.log(empty[i]+" "+c)
+
+    
+}
+
+31/2/24
+1)sum of prime number:
+s=0
+n=+prompt("enter a number")
+newstr=String(n)
+for(a of newstr){
+newnum=Number(a)
+c=0
+for(i=2;i<newnum;i++){
+if(newnum%i==0){
+    c=c+1
+}
+}
+if(c==0){
+    s=s+newnum
+    
+}
+}
+console.log(s)
+
+1/2/24
+
+1)n=[221,45,66,333,877]
+empty=[]
+for(i=0;i<n.length;i++){
+s=String(n[i])
+e=""
+for(j=0;j<s.length;j++){
+    if(!e.includes (s[j])){
+        e=e+s[j]
+    }
+}
+    es=""
+    for(k of e){
+        c=0
+for(h of s){
+    if(k==h){
+    c++
+}
+    }es=es+c+k
+}empty.push(es)
+}
+console.log(empty)
+
+
+5/2/24
+1)
+arr="ASDjnsjaoidwD"
+u="",l=""
+for(i of arr){
+if(i===i.toLowerCase()){
+    l=l+i;
+}
+
+else{
+    u=u+i;
+}
+}
+console.log(u[u.length-2]+l[l=l.length-2])
+
+2)arr=[21,8,79,5,6,8,21,7,5,21]
+u=[],d=[]
+e=[]
+for (i of arr){
+    if(!e.includes(i)){
+        e.push(i)
+    }
+}for(s of e){
+    count=0
+    for(t of arr){
+        if(s==t){
+        count++
+    }
+}
+if(count>1){
+    d.push(s)
+}
+else{
+    u.push(s)
+}
+}console.log(u,d)
+
+
+3)str=["hello","bye"]
+c=[]
+for(i=0;i<str.length;i++){
+    b=""
+    for(j=0;j<str[i].length;j++){
+        if(i===0){
+            b+=str[i][j].toUpperCase()        }
+    }
+    else {
+        b += str[i][j];
+    }
+}
+c.push(b)
+}
+console.log(c)
+// let str = ["hello", "bye"];
+// let c = [];
+
+// for (let i = 0; i < str.length; i++) {
+//     let b = "";
+//     for (let j = 0; j < str[i].length; j++) {
+//         if (i === 0) {
+//             b += str[i][j].toUpperCase();
+//         } else {
+//             b += str[i][j];
+//         }
+//     }
+//     c.push(b);
+// }
+
+// console.log(c);
+
+
+
+8/2/24
+1) reveresd string/arr are equal:
+arr=["aba","madam","bass","aaa"]
+str=[1,2,3,4];
+for(i of arr){
+   reversedString="";
+for(let j=i.length-1;j>=0;j--){
+    reversedString+=i[j];
+}
+if(reversedString===i){
+        console.log(i);
+    }
+} 
+ output:
+aba
+madam
+aaa
+
+2)let arr=["*"]
+for(let i=0;i<=4;i++){
+    let row="";
+        for(let j=0;j<i;j++){
+            row+=arr[0]+" ";
+            
+        }
+    
+    console.log(row)}
+output: 
+* 
+* * 
+* * * 
+* * * * 
+
+
+
+3) functionn: 
+let str = () => {
+    let reversedString = "";
+    
+    for (let i = "Hello World!".length - 1; i >= 0; i--) {
+        reversedString += "Hello World!"[i];
+    }
+
+    return reversedString;
+}
+
+console.log(str());

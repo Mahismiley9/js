@@ -1,0 +1,98 @@
+1) var a=[0,1,2,3,4]
+ for(i=0;i<5;i++){
+     console.log(a[i]);
+ }
+2)var a=[1,2,3,4,5];
+for(i=0;i<a.length;i++){
+    if(a[i]%2.==0){
+        console.log("true"+a[i]);
+        
+    }
+    else{console.log("false"+a[i]);}
+}
+output:false1
+true2
+false3
+true4
+false5
+
+3)'shifting'
+var a=[1,2,3,4,5];
+a[5]=11;
+console.log(a);
+output:
+[ 1, 2, 3, 4, 5, 11 ]
+
+4)var a=[1,2,3,4,5];
+a[a.length]="hi";
+console.log(a);
+output:
+[ 1, 2, 3, 4, 5, 'hi' ]
+splice:
+var a=[1,2,3,4,5]
+a.splice(2,1,"hi")
+console.log(a);
+output:
+[ 1, 2, 'hi', 4, 5 ]
+
+
+
+5)var a=("hello","help","hello guys","in","undefined");
+for(i=0;i<=a.length;i++){
+if( a[i]=="a"|| a[i]=="e"||a[i]=="u"||a[i]=="o"){
+    console.log(a[i]);
+}}
+output:
+u
+e
+e   
+
+6)function js(a,b)
+{return a+b}
+console.log(js(5,6))
+output:11
+
+7)function js(a,b)
+{return a/b}
+console.log(js(12,6))
+
+8)function js(a,b)
+{return a*b}
+console.log(js(12,6))
+
+29/1/24
+1)
+var a={
+    "name":"mahesh",
+    age:"25",
+    dob:"29/06/1999"
+    
+}
+    console.log(a["age"]);
+2)var a={
+    "name":"mahesh",
+    age:"25",
+    dob:"29/06/1999"
+    
+}
+for(h in a){
+    console.log(h);
+}
+    console.log(a["age"]);
+3)var a={
+    name:"mahesh",
+  names:"lopvchicken"
+}
+
+    console.log(Object.entries(a));/ console.log(Object.entries(a).flat());
+
+    console.log();
+4)var a={
+    name:"mahesh",
+  names:"lopvchicken"
+}
+
+    console.log(Object.entries(a).flat());
+a.name="mahesh chicken"
+    console.log(Object.entries(a).flat());
+    console.log();

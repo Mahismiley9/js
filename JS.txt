@@ -1,0 +1,67 @@
+ VARIABLES:
+
+Variables are Containers for Storing Data
+
+JavaScript Variables can be declared in 4 ways:
+
+    Automatically
+    Using var
+    Using let
+    Using const
+In this first example, x, y, and z are undeclared variables.
+ex:
+    x stores the value 5
+    y stores the value 6
+    z stores the value 11
+note;
+The var keyword was used in all JavaScript code from 1995 to 2015.
+
+The let and const keywords were added to JavaScript in 2015.
+
+The var keyword should only be used in code written for older browsers.
+
+js LET:
+The let keyword was introduced in ES6 (2015)
+
+Variables declared with let have Block Scope
+
+Variables declared with let must be Declared before use
+
+Variables declared with let cannot be Redeclared in the same scope
+Block Scope
+
+Before ES6 (2015), JavaScript did not have Block Scope.
+
+JavaScript had Global Scope and Function Scope.
+
+ES6 introduced the two new JavaScript keywords: let and const.
+
+These two keywords provideed Block Scope in JavaScript
+Global Scope
+
+Variables declared with the var always have Global Scope.
+
+Variables declared with the var keyword can NOT have block scope
+Cannot be Redeclared
+
+Variables defined with let can not be redeclared.
+
+You can not accidentally redeclare a variable declared with let.
+
+
+The const keyword was introduced in ES6 (2015)
+
+Variables defined with const cannot be Redeclared
+
+Variables defined with const cannot be Reassigned
+
+Variables defined with const have Block Scope
+
+Operator 	Example 	Same As
+= 	         x = y 	       x = y
++= 	         x += y        x = x + y
+-= 	         x -= y        x = x - y
+*= 	         x *= y        x = x * y
+/= 	         x /= y        x = x / y
+%= 	         x %= y        x = x % y
+**= 	         x **= y       x = x ** y

@@ -1,0 +1,19 @@
+02/01/2024
+task:
+diff b/w script language and programming language
+03/01/24
+data variable:
+hosting ,consol.log(var) <  (only disclaration will go up but not the value)>
+debugger
+task: rules and regulations of data variables
+
+
+05/01/24
+premitive data types r stored in stack.
+it has number, string, boolean. 
+any number true expect zero in boolean (true or false)
+
+
+
+non premitive data types r stored in heap.
+it has arrays,(1,2,3,4);

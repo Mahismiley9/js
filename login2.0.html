@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <style>
+        body{
+            background-image: url(./login\ back.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1{
+            font-size: 100px;
+        }
+        input{
+            font-size: 50px;
+            color: rgb(83, 171, 171);
+        }
+        label{
+            font-size: 65px;
+            color: blueviolet;
+        }
+    </style>
+    <center>
+        <form action="" id="login">
+            <h1>LOGIN PAGE</h1>
+            <label for="username">User name:</label>
+            <input type="text" placeholder="enter username" required id="username"><br><br>
+            <label for="password">Password:</label>
+            <input type="text" placeholder="enter password" required id="password"><br><br><br>
+            
+
+    
+        </form>
+    </center>
+    <script>
+        var form=document.getElementById("login")
+form.addEventListener("submit",function(event){
+    event.preventDefault();
+
+    var username=document.getElementById("username").value;
+    var password=document.getElementById("password").value;
+
+userData=localStorage.getItem(username);
+if(userData){   
+     userData=JSON.parse(userData);
+    if(userData.password==password){
+        alert("login successfull");
+        
+    }
+    else{
+        alert("invalid username")
+    };
+}
+    else{
+        alert("user not found")}
+        Window.location.href="./click.html"
+
+    }
+);  
+  </script>
+    
+</body>
+</html>
